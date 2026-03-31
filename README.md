@@ -79,7 +79,9 @@ uvicorn app.main:app --reload --host http://127.0.0.1/ --port 8001
 
 打开浏览器访问 **http://127.0.0.1:8001** 就能看到聊天界面了。
 
-![image-20260331190217709](D:\LeStoreDownload\install\Typora\fig\image-20260331190217709.png)
+![image-20260331190217709](初始界面.png)
+
+![image-20260331190217709](问答样例界面.png)
 
 ## 代码介绍
 
