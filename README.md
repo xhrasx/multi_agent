@@ -81,6 +81,10 @@ uvicorn app.main:app --reload --host http://127.0.0.1/ --port 8001
 
 ![image-20260331190217709](D:\LeStoreDownload\install\Typora\fig\image-20260331190217709.png)
 
+## 代码介绍
+
+包含app\frontend\static文件夹。app/main.py为主文件
+
 ## 其他测试样例
 
 ```
