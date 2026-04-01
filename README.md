@@ -132,10 +132,13 @@ curl -X POST http://localhost:8000/ask -H "Content-Type: application/json" \
 ## 问答：
 
 > **Q: 为什么用 ReAct 而不是简单的 function calling？**
->  A: ReAct 支持多步推理和反思，遇到复杂问题可以迭代，比单次 function calling 更灵活。
+>
+> A: ReAct 支持多步推理和反思，遇到复杂问题可以迭代，比单次 function calling 更灵活。
 
 > **Q: 工具注册中心怎么设计的？**
->  A: 全局单例模式，每个工具注册时提供 name、callable、description，executor 统一调度，新增工具零侵入。
+>
+> A: 全局单例模式，每个工具注册时提供 name、callable、description，executor 统一调度，新增工具零侵入。
 
 > **Q: 怎么保证 LLM 输出的 JSON 格式正确？**
->  A: System Prompt 里严格约束输出格式，代码层做了 JSON 解析的 try-catch 兜底。
+>
+> A: System Prompt 里严格约束输出格式，代码层做了 JSON 解析的 try-catch 兜底。
