@@ -45,13 +45,27 @@
 
 ## 运行方式
 
-1、根据requirements.txt配置环境，注意python=3.10
+### 1、根据requirements.txt配置环境，注意python=3.10
 
 ```
 pip install -r requirements.txt
 ```
 
-2、安装依赖 & 构建
+### 2、修改LLM API
+
+打开app/core/llm_reasoner.py文件
+
+修改LLMReasoner类的模型参数为实际调用模型
+
+```
+self.api_key = ""                  # 填写你的 API Key
+
+self.url = ""                      # 填写你的 API 地址
+
+self.model = ""                    # 填写你的模型名称
+```
+
+### 3、安装依赖 & 构建
 
 ```
 # 1. 进入 frontend 目录
@@ -67,7 +81,7 @@ npm run dev
 npm run build
 ```
 
-3、启动
+### 4、启动
 
 ```
 # 回到项目根目录

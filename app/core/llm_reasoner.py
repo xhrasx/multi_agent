@@ -8,10 +8,10 @@ import requests
 
 class LLMReasoner:
 
-    def __init__(self):
-        self.api_key = "sk-poe-0b8uMtsIcvMsmHHvAwGSEQenw3O_Ae6AqHHBLFydDfQ"
-        self.url = "https://api.poe.com/v1/chat/completions"
-        self.model = "gpt-5.3-codex"
+    def __init__(self): 
+        self.api_key = ""                                   # 填写你的 API Key
+        self.url = ""                                       # 填写你的 API 地址
+        self.model = ""                                     # 填写你的模型名称
 
     def reason(self, user_input, memory):
         history = memory.get_context()
