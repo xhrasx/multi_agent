@@ -11,8 +11,8 @@ class TranslatorTool:
 
     def run(self, text: str) -> str:
         try:
-            api_key = "sk-poe-0b8uMtsIcvMsmHHvAwGSEQenw3O_Ae6AqHHBLFydDfQ"
-            url = "https://api.poe.com/v1/chat/completions"
+            api_key = ""
+            url = ""
 
             response = requests.post(
                 url,
@@ -21,7 +21,7 @@ class TranslatorTool:
                     "Content-Type": "application/json"
                 },
                 json={
-                    "model": "gpt-5.3-codex",
+                    "model": "",
                     "messages": [
                         {
                             "role": "system",

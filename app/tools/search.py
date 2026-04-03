@@ -8,9 +8,9 @@ class SearchTool:
     description = "搜索知识、百科、人物、事件、概念解释等"
 
     def __init__(self):
-        self.api_key = "sk-poe-0b8uMtsIcvMsmHHvAwGSEQenw3O_Ae6AqHHBLFydDfQ"
-        self.url = "https://api.poe.com/v1/chat/completions"
-        self.model = "gpt-5.3-codex"
+        self.api_key = ""
+        self.url = ""
+        self.model = ""
 
     def run(self, query: str) -> str:
         try:
